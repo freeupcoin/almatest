@@ -18,7 +18,8 @@ RUN   apk --no-cache upgrade && \
               -DCUDA_ENABLE=OFF  \
               -DMICROHTTPD_ENABLE=OFF \
               -DOpenCL_ENABLE=OFF && \
-        make install
+        make install \
+        chown -R freecoin /almaminer 
 USER  freecoin
 WORKDIR    /almaminer
 ENTRYPOINT  ["/almaminer/xmr-stak/build/bin/xmr-stak"]
