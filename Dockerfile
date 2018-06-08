@@ -9,7 +9,7 @@ RUN   apk --no-cache upgrade && \
         curl-dev \
         git \
         build-base && \
-        cd /almaminer && \
+        cd ~almaminer && \
         git clone https://github.com/fireice-uk/xmr-stak.git && \
         mkdir xmr-stak/build && \
         cd xmr-stak/build && \
