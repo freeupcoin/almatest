@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN   adduser -S -D -H -h /almaminer -m freecoin
+RUN   adduser -S -D -h /almaminer freecoin
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
         automake \
