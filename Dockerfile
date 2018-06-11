@@ -19,7 +19,7 @@ RUN   apk --no-cache upgrade && \
               -DMICROHTTPD_ENABLE=OFF \
               -DOpenCL_ENABLE=OFF && \
         make install 
-COPY  config.txt cpu.txt pools.txt /almaminer/xmr-stak/build/bin/ 
+COPY  config.txt cpu.txt pools.txt /almaminer
 RUN   chown -R freecoin /almaminer 
 USER  freecoin
 WORKDIR    /almaminer
